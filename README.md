@@ -1,7 +1,7 @@
 ## UAS Keamanan Komputer
 ## Kelas TK5B
 ## Nama Kelompok
-- Antony Subroto ---------------------(090302823270)
+- Antony Subroto ---------------------(09030282327007)
 - Y. Agatha Natsua --------------------(09030282327052)
 - Dyakiyyah Aulia Nadzifah BR.S --- (09030582327100)
 
