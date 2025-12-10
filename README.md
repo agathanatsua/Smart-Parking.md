@@ -395,30 +395,42 @@ METEDEOLOGI
 
 Reconnaissance dan Enumeration
 Memindai Jaringan Lokal dan Port pada target yang aktif
+
 ![alt text](http://github.com/agathanatsua/Smart-Parking.md/blob/main/gambar%201.2.jpeg?raw=true)
+
 Gambar 1.1 List Port ESP32 menggunakan nmap -T4 -F
+
 ![alt text](https://github.com/agathanatsua/Smart-Parking.md/blob/main/gambar%201.1.jpeg?raw=true)
+
 Gambar 1.2 List Port ESP32 menggunakan nmap -sV -p
 
 	Selanjutnya, pemindaian Nmap dengan perintah nmap -T4 -F 192.168.4.1 mengkonfirmasi bahwa Port 80 (HTTP) berstatus Open. Mengakses IP tersebut melalui browser menampilkan antarmuka "Smart Parking ESP32".
 
 Authentication Bypass
 	Ketika web server dapat diakses tanpa login, maka pada kali linux dapat menjalankan perintah “curl http://192.168.4.1”, Lalu didapat output:
+	
 ![alt text](https://github.com/agathanatsua/Smart-Parking.md/blob/main/gambar%202.1.jpeg?raw=true)
+
 Gambar 2.1 Kelemahan terdeteksi pada output curl
 ![alt text](https://github.com/agathanatsua/Smart-Parking.md/blob/main/gambar%202.2.jpeg?raw=true)
+
 Gambar 2.2 Kelemahan terdeteksi pada output curl
+
 	Hasil HTTP menunjukkan bahwa alamat Web Server menerima perintah (contoh:/confirm_keluar dan confirm_masuk) tanpa memeriksa siapa pengirimnya atau meminta kata sandi. sehingga sangat mudah untuk melakukan eksploitasi
 
 Eksekusi Serangan
 	Eksekusi menggunakan metode serangan Replay Attack dengan memanfaatkan Curl,
+	
 ![alt text](https://github.com/agathanatsua/Smart-Parking.md/blob/main/gambar3.1.jpeg?raw=true)
+
 Gambar 3.1 Membuat file replay_attack.sh
 
 ![alt text](https://github.com/agathanatsua/Smart-Parking.md/blob/main/gambar3.2.jpeg?raw=true)
+
 Gambar 3.2 Isi file
 
 ![alt text](https://github.com/agathanatsua/Smart-Parking.md/blob/main/gambar3.3.jpeg?raw=true)
+
 	Gambar 3.3 Isi file 
 
 kode: 
